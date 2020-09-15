@@ -38,18 +38,19 @@
     <a class="p-2 text-dark" href="pictures.html">Google Picture</a>
     <a class="p-2 text-dark" href="advanced.html">Advanced Search</a>
   </nav>
-  <a class="btn btn-outline-primary" href="login.html">Log in</a>
 </div>
 
-<div id="input" class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
   <h1 class="display-4"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png" alt="Google" width="272"></h1>
   <p class="lead">Which font is this?</p>
-    <form>
-      <input type="text" placeholder="What are you looking for?" name="name" size="50px" >
-      <input type="submit">
+    <form action="https://google.com/search">
+      <input id="textinput" type="text" placeholder="What are you looking for?" name="q" size="50px">
+      <br>
+      <br>
+      <input class="button" type="submit">
+      <input class="button" type="submit" value="I'm feeling lucky"</input>
     </form>
 </div>
-
 
 
 </body>
