@@ -12,57 +12,23 @@
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        input:focus{
+        border-color:#4d90fe;
         }
-      }
-      input{
-    border: none;
-    padding: 10px;
-    margin: 10px;
-    height: 20px;
-    width: 500px;
-    border:1px solid #eaeaea;
-    outline:none;
-}
+        td {
+            font-size: 12px;
+        }
+        Input[type="submit"]{
+    background-color: #4D90FE;
+	background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+	background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
+	background-image: -ms-linear-gradient(top,#4d90fe,#4787ed);
+	background-image: -o-linear-gradient(top,#4d90fe,#4787ed);
+	background-image: linear-gradient(top,#4d90fe,#4787ed);
 
-      input:hover{
-    border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
-}
-
-      input:focus{
-    border-color:#4d90fe;
-}
-
-input[type="submit"] {
-    border-radius: 2px;
-    background: #f2f2f2;
-    border: 1px solid #f2f2f2;
-    color: #757575;
-    cursor: default;
-    font-size: 14px;
-    font-weight: bold;
-    width: 100px;
-    padding: 0 16px;
-    height:36px;
-}
-input[type="submit"]:hover {
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-    background: #f8f8f8;
-    border: 1px solid #c6c6c6;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-    color: #222;
-}
+	border: 1px solid #3079ED;
+	color: white;
+        }
     </style>
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
@@ -84,20 +50,20 @@ input[type="submit"]:hover {
     <thead>
             <tr>  <!-- table row -->
                 <th>Search websites which...</th>
-                <th> </th>
-                <th> </th>
-                <th> </th>
+                <th></th>
+                <th></th>
+                <th></th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
         <form action="https://https://images.google.com/search">
-            <tr>   <!-- rows -->
+            <tr>
                 <td> all these words: </td>  <!-- individual data points (table data) -->
                 <td> <input type="text" placeholder="" name="q" size="50px"> </td>
                 <td> Type the important words: tri-colour rat terrier </td>
             </tr>
-            <tr>        <!-- jede table data brauch sein eigenes tr -->
+            <tr>
                 <td> this exact word or phrase: </td>
                 <td> <input type="text" placeholder="" name="q" size="50px"> </td>
                 <td> Put exact words in quotes: "rat terrier" </td>
@@ -114,20 +80,23 @@ input[type="submit"]:hover {
             </tr>
              <tr>
                 <td></td>
-                <td><input class="button.adv" type="submit" value="Advanced Search" style="font-size: 10px"></td>
+                <td><input type="submit" value="Advanced Search"
+                           style="font-size: 10px;
+                           background-color: #4D90FE;
+	                        background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+	                        background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
+	                        background-image: -ms-linear-gradient(top,#4d90fe,#4787ed);
+	                        background-image: -o-linear-gradient(top,#4d90fe,#4787ed);
+	                        background-image: linear-gradient(top,#4d90fe,#4787ed);
+
+	                        border: 1px solid #3079ED;
+	                        color: white;">
+                </td>
              </tr>
         </form>
         </tbody>
     </table>
     <br>
-  <h1 class="display-4"><img src="googlelogo_color_272x92dp.png" alt="Google" width="272"></h1>
-  <p class="lead">Advanced Search</p>
-    <form action="https://https://images.google.com/search">
-      <input type="text" placeholder="What are you looking for?" name="q" size="50px">
-      <br>
-      <br>
-      <input class="button" type="submit" value="Search">
-    </form>
 </div>
 </body>
 </html>
